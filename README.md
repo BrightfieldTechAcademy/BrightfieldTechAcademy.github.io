@@ -1,1 +1,1 @@
-# Brightfield-Tech-Academy.github.io
+# BrightfieldTechAcademy.github.io
