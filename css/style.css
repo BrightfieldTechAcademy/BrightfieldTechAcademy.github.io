@@ -299,6 +299,10 @@ p {
   color: white;
 }
 
+#centerCounterArea h1,h3{
+  color: white;
+}
+
 /* start  of flipOverthreecards section */
 .flip {
   margin-top: 5rem;
