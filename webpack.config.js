@@ -11,6 +11,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/programs.html',
+      filename: 'programs.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/contact.html',
+      filename: 'contact.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/mentorship.html',
+      filename: 'mentorship.html',
+    }),
   ],
   output: {
     filename: '[name]. bundle.js',
