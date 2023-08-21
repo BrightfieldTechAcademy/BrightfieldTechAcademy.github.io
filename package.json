@@ -4,7 +4,13 @@
   "description": "Brightfild Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom"
   },
   "keywords": [],
   "author": "Brightfield Team",

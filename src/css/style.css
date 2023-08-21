@@ -1,7 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap');
 
 :root {
   --primary: #00bfff;
@@ -166,7 +164,7 @@ nav {
   align-items: center;
   justify-content: center;
   font-family: 'Lato', sans-serif;
-  background-color:#0c1424;
+  background-color: #0c1424;
 }
 
 /* mobile */
@@ -179,10 +177,10 @@ nav {
     padding: 1rem;
   }
 
-  .videotext  h1 {
+  .videotext h1 {
     color: white !important;
     z-index: 2;
-    font-weight:900;
+    font-weight: 900;
     display: flex;
     justify-content: center;
   }
@@ -190,26 +188,23 @@ nav {
   h2 {
     color: white;
   }
-  
 }
-
 
 @media (width > 768px) {
   .videotext {
     display: flex;
     justify-content: flex-end;
     width: 100%;
- 
   }
 
   .videotext .inner {
-    width:50% ;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  
-  .videotext  h1 {
+
+  .videotext h1 {
     color: white !important;
     z-index: 2;
     font-weight: 900;
@@ -229,17 +224,12 @@ nav {
     font-size: 30px;
     flex-shrink: 2;
   }
-
-
-  
 }
 
 .videotextButton {
   background-color: #05aae1;
   color: white;
-
 }
-
 
 .videoWrapper video {
   object-fit: cover;
@@ -299,7 +289,8 @@ p {
   color: white;
 }
 
-#centerCounterArea h1,h3{
+#centerCounterArea h1,
+h3 {
   color: white;
 }
 
@@ -402,7 +393,7 @@ p {
 }
 
 #thirdImageholder {
-  background-image: url(../images/oliverandfrind.jpg);
+  background-image: url(../assets/oliverandfrind.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   top: 1rem;
@@ -424,7 +415,7 @@ p {
 }
 
 #forthImageholder {
-  background-image: url(../images/oliverandfrind.jpg);
+  background-image: url(../assets/oliverandfrind.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   top: 1rem;
@@ -464,6 +455,10 @@ footer {
   font-family: 'Poppins', sans-serif;
 }
 
+footer a {
+  color: var(--primary) !important;
+}
+
 footer a:hover {
   color: var(--primary) !important;
 }
@@ -472,8 +467,6 @@ footer p:hover {
   color: var(--primary) !important;
 }
 
-footer a {
-  color: var(--primary) !important;
-}
+
 
 /* footer end */
