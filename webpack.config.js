@@ -23,6 +23,10 @@ module.exports = {
       template: './src/mentorship.html',
       filename: 'mentorship.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/learn.html',
+      filename: 'learn.html',
+    }),
   ],
   output: {
     filename: '[name]. bundle.js',

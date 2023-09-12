@@ -7,25 +7,31 @@
   --body: rgb(252, 245, 245);
 }
 
-* {
-  border: 1px solid red;
-  padding: 0;
-  margin: 0;
+*{
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
-header {
-  width: 100vw;
-}
-
 body {
+  color: #00bfff;
   width: 100vw;
-  font-family: 'Noto Sans Mono', monospace;
-  background-color: rgb(252, 245, 245);
-  z-index: -3;
-  color: var(--secondary);
+
+}
+/* Navbar start */
+.navbarWrapper {
+   background-color: var(--primary); 
+   height: 6rem; 
+   width: 100%;
+   overflow-y: hidden;
 }
 
+.companyLogo {
+  max-height: 25%; 
+  max-width: 18%; 
+  overflow:hidden; 
+  margin-left: 1rem;
+}
 .navbar-nav > span {
   font-size: x-small;
   position: absolute;
@@ -39,24 +45,23 @@ body {
   color: #4f4f4f;
 }
 
+.navbar-scroll .nav-link:hover {
+  color: #1266f1;
+}
+
+/* Color of the links AFTER scroll */
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navar-brand {
   color: #4f4f4f;
 }
 
-.nav-link:active {
-  color: #1266f1;
-}
-
-.navbar-scroll .nav-link:hover {
-  color: #1266f1;
-}
-
+/* Color of the navbar AFTER scroll */
 .navbar-scroll,
 .navbar-scrolled {
   background-color: #fff;
 }
 
+/* An optional height of the navbar AFTER scroll */
 .navbar.navbar-scroll.navbar-scrolled {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -79,6 +84,9 @@ nav .show {
 }
 
 nav {
+  margin-top: 1rem;
+  width: 100vw !important;
+  margin: 0;
   min-height: 5rem;
   position: relative;
   font-family: 'Poppins', sans-serif;
@@ -115,6 +123,7 @@ nav {
 
 .navbar-toggler .middle-bar {
   opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .navbar-toggler .bottom-bar {
@@ -122,8 +131,8 @@ nav {
   transform-origin: 10% 10%;
 }
 
-@media (max-width: 982px) {
-  nav .collapse {
+@media (max-width: 982) {
+  nav collapse {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -132,13 +141,19 @@ nav {
   }
 }
 
+
+
+
+
+/* when navbar is collapsed   start */
+
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
 }
 
 .navbar-toggler.collapsed .middle-bar {
   opacity: 1;
-  filter: alpha(100);
+  filter: alpha(opacity=100);
   transform: rotate(0);
 }
 
@@ -226,11 +241,6 @@ nav {
   }
 }
 
-.videotextButton {
-  background-color: #05aae1;
-  color: white;
-}
-
 .videoWrapper video {
   object-fit: cover;
   height: 100vw;
@@ -240,10 +250,6 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.bio {
-  width: 100%;
 }
 
 .missionAndValues {
@@ -256,12 +262,12 @@ nav {
   padding: 1rem;
 }
 
-.bio .h4,
+.missionAndValuesContainer .h4,
 p {
   color: white;
 }
 
-.wrapParentDualSection .textArea {
+.ParentWrapperForDualSection .textArea {
   padding: 3rem;
 }
 
@@ -277,6 +283,12 @@ p {
 
 .FirstOverlayOfFlipOver > hr {
   border-color: white;
+}
+
+/* Section Number 4 */
+.hallMark {
+  color: #0c1424;
+  background-color: rgb(247, 246, 245);
 }
 
 #centerCounterArea {
