@@ -10,7 +10,7 @@ font-family: 'Poppins', sans-serif; */
 
 body {
   width: 100vw;
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   background-color: rgb(252, 245, 245);
   z-index: -3;
 
@@ -28,13 +28,9 @@ justify-content: center; */
   overflow-x: hidden !important;
 }
 
-
 /* header nav  */
 
 /* header nav  */
-
-
-
 
 /* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
@@ -86,7 +82,7 @@ nav {
   margin: 0;
   min-height: 5rem;
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-toggler {
@@ -110,7 +106,7 @@ nav {
 }
 
 .middle-bar {
-  margin: 5px  auto;
+  margin: 5px auto;
 }
 
 .navbar-toggler .top-bar {
@@ -138,15 +134,6 @@ nav {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* when navbar is collapsed   start */
 
 .navbar-toggler.collapsed .top-bar {
@@ -163,22 +150,7 @@ nav {
   transform: rotate(0);
 }
 
-
-
-
-
-
-
 /* end of navbar collpsed  */
-
-
-
-
-
-
-
-
-
 
 /* video */
 
@@ -222,23 +194,15 @@ nav {
 
 /* bgpic */
 
-
-
-
-
-
-
 /* overview */
 
 #overview {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* header pathwasy */
 
 /* end of header  pathway */
-
-
 
 /* start  6 col pathway  */
 .wrappathway {
@@ -262,10 +226,7 @@ nav {
   color: white;
 }
 
-
 /* end of 6 col pathway */
-
-
 
 /* start of   firsttestimonial */
 #firsttestimonial {
@@ -277,7 +238,6 @@ nav {
   z-index: -3;
 }
 
-* flip over */
 /* start of first middlePagePictures */
 #FirstFlipOver {
   height: 100%;
@@ -327,31 +287,18 @@ nav {
   border-color: white;
 }
 
-
-
-
-
-
 /* end of flip over */
 
 /* end of firsttestimonial */
 
-
-
-
-
-
 /* end  of two  vid section start */
-
 
 /* about founder start */
 .bio .text-center {
   color: var(--primary);
 }
 
-
 /* about founder end */
-
 
 /* after flip what you  need to know section   */
 
@@ -411,14 +358,7 @@ nav {
   color: white;
 }
 
-
-
-
-
-
 /* end of what you need to know */
-
-
 
 /* requirements  starts */
 
@@ -439,11 +379,7 @@ nav {
   font-weight: bold;
 }
 
-
 /* requirements end */
-
-
-
 
 /* testimonies  start */
 .testimoniesSec {
@@ -465,14 +401,7 @@ nav {
 
 } */
 
-
 /* tetimonies end */
-
-
-
-
-
-
 
 /* interested in mentoring? section */
 .interestedSection .wrap {
@@ -500,13 +429,6 @@ nav {
   color: white;
 }
 
-
-
-
-
-
-
-
 /* interested inmentoring section */
 
 #floatn img {
@@ -516,14 +438,6 @@ nav {
   opacity: 0.4;
 }
 
-
-
-
-
-
-
-
-
 /* footerstart */
 
 footer {
@@ -531,7 +445,7 @@ footer {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 footer a:hover {

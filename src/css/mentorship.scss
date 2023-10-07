@@ -11,7 +11,7 @@ font-family: 'Poppins', sans-serif;
 
 body {
   width: 100vw;
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   background-color: rgb(252, 245, 245);
   z-index: -3;
 
@@ -28,7 +28,6 @@ body {
   position: relative;
   overflow-x: hidden !important;
 }
-
 
 /* header nav  */
 
@@ -87,19 +86,11 @@ body {
 
 /* bgpic */
 
-
-
-
-
-
 /* bgpic */
-
 
 /* header pathwasy */
 
 /* end of header  pathway */
-
-
 
 /* start  6 col pathway  */
 .wrappathway {
@@ -123,10 +114,7 @@ body {
   color: white;
 }
 
-
 /* end of 6 col pathway */
-
-
 
 /* start of   firsttestimonial */
 #firsttestimonial {
@@ -138,7 +126,6 @@ body {
   z-index: -3;
 }
 
-* flip over */
 /* start of first middlePagePictures */
 #FirstFlipOver {
   height: 100%;
@@ -152,7 +139,7 @@ body {
 }
 
 #firstImageholder {
-  background-image: url(../../dist/images/louiz.jpg);
+  // background-image: url(../../dist/images/louiz.jp);
   background-size: contain;
   background-repeat: no-repeat;
   top: 1rem;
@@ -188,11 +175,6 @@ body {
   border-color: white;
 }
 
-
-
-
-
-
 /* start of as  mentor */
 
 .AsMent {
@@ -209,22 +191,14 @@ body {
 
 /* end of end of as mentor */
 
-
-
-
-
-
 /* end  of two  vid section start */
-
 
 /* about founder start */
 .bio .text-center {
   color: var(--primary);
 }
 
-
 /* about founder end */
-
 
 /* after flip what you  need to know section   */
 
@@ -284,11 +258,7 @@ body {
   color: white;
 }
 
-
-
-
 /* end of what you need to know */
-
 
 /*  */
 #becomeMember {
@@ -299,16 +269,13 @@ body {
   border-style: none;
   background-color: var(--primary);
   color: white !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #becomeMember a {
   text-decoration: none;
   color: white;
 }
-
-
-
 
 /* requirements  starts */
 
@@ -329,11 +296,7 @@ body {
   font-weight: bold;
 }
 
-
 /* requirements end */
-
-
-
 
 /* testimonies  start */
 .testimoniesSec {
@@ -355,16 +318,7 @@ body {
 
 } */
 
-
 /* tetimonies end */
-
-
-
-
-
-
-
-
 
 /* interested in   mentoring section */
 .mentormotiv {
@@ -421,19 +375,7 @@ hr {
   color: white;
 }
 
-
-
-
-
-
-
-
 /* interested inmentoring section */
-
-
-
-
-
 
 /* footerstart */
 
@@ -442,7 +384,7 @@ footer {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 footer a:hover {
