@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet"/>
+  <link rel="icon" type="image/x-icon" href="images/2ndlogoofcode.webp">
+  <script src="https://kit.fontawesome.comee/1e5c12ce8a.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&family=Poppins:wght@300;400&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+San s+Mono:wght@300;400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/mentorship.scss">
+</head>
+<body>
+    <header class="fixed-top top:0px">
+        <div class= "navext" style="  background-color: var(--primary); height: 6rem; width: 100%;; overflow-y: hidden;">
+             <nav class="navbar navbar-expand-lg  navbar-scroll  ">
+               <div class="container ">
+                   <img style="max-height: 25%; max-width: 18%; overflow: hidden; margin-left: 1rem;" src="./assets/logohd.jpg"   alt=""  loading="lazy"/>
+                   <button class="navbar-toggler  collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="toggler-icon top-bar"></span>
+                     <span class="toggler-icon middle-bar"></span>
+                     <span class="toggler-icon bottom-bar"></span>
+                   </button>
+                 <div class="collapse navbar-collapse " id="topNavbar">
+                   <ul class="navbar-nav ms-auto  mb-2 mb-sm-0  align-items-center">
+                     <li class="nav-item">
+                       <a class="nav-link active"   aria-current="page" href="./index.html">Home
+                       </a>
+                     </li> 
+                     <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="./learn.html">Learn</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="./programs.html"> Programs</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="./mentorship.html">Mentor</a>
+                     </li>  
+                     <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" aria-current="page" href="#">Blog</a>
+                     </li>
+                   </ul>      
+                   <ul class="navbar-nav align-items-center">
+                     <li class="nav-item">
+                       <a class="nav-link px-2" . target="_blank" href="https://web.facebook.com/groups/btadevcommunity">
+                         <i class="fab fa-facebook-square " style="color:blue ;"></i>
+                       </a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link px-2" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fbrightfieldtechacademy%2F%3Ffbclid%3DIwAR05VpPfqmsMvZk4bt_O46EDJsbKhbh_d8AG0aJPHJNak4UsmWRzE3aNoAE&h=AT21pfXlGUOVNf1v1PS7WD1uDKdvp_54w4DBM14Qgd5BtOCjOO8sxHGxyntscQNhr7YKt35K3K0tyDPsY-Czrg8VMVbK6B3ZvqQ4X4tVq8zPpPJjUXP1jezep82lsd5C3cMy3zFzADw">
+                         <i class="fab fa-instagram" style="color:red ;"></i>
+                       </a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link ps-2" href="#!">
+                         <i class="fab fa-youtube"  style="color:red ;"></i>
+                       </a>
+                     </li>  
+                   </ul>
+                 </div>
+               </div>
+             </nav>
+        </div>    
+    </header>
+    <section>
+     <!--  bg wallpaper start -->
+          <div >
+          <div class="row">
+            <div class="col-12 wrapme ">
+                 <div class="bgPic" >
+                    <img style="max-height:300px ;" class=" image-fluid h-60 w-100"  src="./images/codeswalp.jpg" alt="">
+                    <div class="overlay"></div>
+    
+                    <div  class="wrap">
+                      <div class="row">
+                        <div class="col-xm-12">
+                          <p class="header">
+                            “In learning you will teach, and in teaching you will learn.”  <small>– Phil Collins</small> 
+                           </p>
+                          <p class="subheader">
+                            MENTORSHIP
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+       
+      <!-- wallpaper -->
+    
+    
+    
+      <!-- mentorship mortivation  start -->
+    <section  class="mentormotiv">
+      <div class="container">
+        <div class="mentorMotivationwrap">
+          <h2  class="pb-2  text-center">
+            We've got an active community of mentors, eager students, and long-time graduates helping each other succeed and be passionate about technology. Mentors truly are the key ingredient to making Brightfied Tech Academy work so well. 
+    
+          </h2>
+          <blockquote class="text-center"> 
+            <i>"Tell me and I forget, teach me and I may remember, involve me and I learn.”</i>
+            <i class="muted"> ― Benjamin Franklin</i>
+          </blockquote>
+        
+          
+      
+        </div>
+      </div>
+    
+    </section>
+    
+    
+    
+  
+        <section class="">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="wrapheader  text-center">
+                <h3>What does it take to be a mentor ?</h3>
+              </div>
+    
+              </div>
+            </div>
+    
+          </div>
+      <!-- end of header for four cards -->
+    
+    <!-- four cards -->
+          <div class="container">
+            <div class="row">
+                <div class="col-xm-12 col-sm-6 col-md-3 col-lg-3">
+                   <div class="wrapvector">
+                    <center>
+                      <div class="circleVector">
+                        <i class="fa-8x fa-solid fa-video"></i>
+                      </div>
+                      </center>
+    
+                    <div class="body">
+                        <h4  class="text-center">
+                            Online meetings
+                        </h4>
+                        <p class="text-center">
+                            Attend and be involved with a weekly Zoom meetup (6-8 p.m.) 
+                            one night per week for 12 weeks..
+                        </p>
+                    </div>
+                  </div>
+                  <!-- div wrap vector -->
+                </div>
+                <div class="col-xm-12 col-sm-6 col-md-3 col-lg-3">
+                  <div class="wrapvector">
+                    <center>
+                      <div class="circleVector">
+                        <i class=" fa-8x fa-solid fa-handshake-angle"></i>
+                        
+                      
+                      </div>
+                      </center>
+    
+                      <div class="body">
+                          <h4 class="text-center">
+                            Provide guidance
+                          </h4>
+                          <p  class="text-center"> 
+                            Answer questions, lead discussions, review projects, and offer advice to students in a programming language of your choice.
+                             Virtually mentor on Slack.
+                          </p>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="col-xm-12 col-sm-6 col-md-3 col-lg-3">
+                  <div class="wrapvector">
+                    <center>
+                      <div class="circleVector relative">
+                       <img src="/images/svg/teamwork.svg" alt="">
+                      </div>
+                      </center>
+    
+                      <div class="body">
+                          <h4 class="text-center">
+                            Work together
+                          </h4>
+                          <p  class="text-center">
+                            Work with other mentors to help 
+                            your class stay on track, involved, and interested.
+                      </div>
+                  </div>   
+                </div>
+                <div class="col-xm-12 col-sm-6 col-md-3 col-lg-3">
+                  <div class="wrapvector">
+                    <center>
+                    <div class="circleVector">
+                        <img src="/images/svg/businessPerson.svg" alt="">
+                    </div>
+                    </center>
+    
+                    <div class="body">
+                        <h4 class="text-center">
+                            Be professional
+                        </h4>
+                        <p  class="text-center">
+                            Maintain professionalism and adhere to the <a href="#">Code of Conduct</a>.
+                        </p>
+                    </div>
+                  </div> 
+                    
+                </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- svg like section ends -->
+    
+         <section>
+          <div class="container">
+            <hr>
+            <div class="row">
+              <div class="col-12 text-center pt-4  pb-4">
+                  <h4>“Mentors get to help people learn and have those ‘a-ha’ moments. It’s a really great, enriching experience.”</h4>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 text-center">
+                <h3> We are constantly trying new classes,
+                   so let us know if you are interested in something special. We regularly offer classes in Front-end Web Development, C#, Python, and JavaScript. If you don't see your preferred stack, 
+                  reach out and we may be able to create a new class!
+                </h3>
+                <center>
+                  <button id="becomeMember"  class="mb-6 ">
+                    <a href="#card-registration">Become  a Mentor</a>
+                </button>
+    
+                </center>
+           
+              </div>
+            </div>
+          </div>
+         </section>
+        
+    
+        <!--As a mentor  -->
+        <section  class="AsMent">
+          <div class="container">
+             <div class="text-center AsMentWrap">
+                <h3 >
+                  “As a mentor you get to work with up-and-coming 
+                  software developers first hand.
+                   It’s a great way to find talented candidates.”
+                </h3>
+                <small>--Senior Mentor : Mr. Oliver Mensah</small>
+                                                    
+             </div>
+          </div>
+        </section>
+        <!-- end of as mentor -->
+    
+    
+        <!-- testimonies from students -->
+        <section class="h-100 bg-light">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col">
+                <div class="card card-registration my-4" id="card-registration" >
+                  <div class="row g-0">
+                    <div class="col-xl-6 d-none d-xl-block">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                        alt="Sample photo" class="img-fluid"
+                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="card-body p-md-4 text-black">
+                        <h3 class="mb-2 text-uppercase">Become a mentor</h3>
+                        <h6 class="pt-3 pb-3">Complete the form below and Brightfied Academy staff member will be in touch shortly. </h6>
+        
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1m">First name</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                              <label class="form-label" for="form3Example1n">Last name</label>
+                            </div>
+                          </div>
+                        </div>
+        
+     
+        
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example8">Address</label>
+                        </div>
+    
+                                <!-- Number input -->
+                      <div class="form-outline mb-4">
+                        <input type="number" id="form7Example6" class="form-control" />
+                        <label class="form-label" for="form7Example6">Phone</label>
+                      </div>
+        
+                        <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+        
+                          <h6 class="mb-0 me-4">Gender: </h6>
+        
+                          <div class="form-check form-check-inline mb-0 me-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                              value="option1" />
+                            <label class="form-check-label" for="femaleGender">Female</label>
+                          </div>
+        
+                          <div class="form-check form-check-inline mb-0 me-4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                              value="option2" />
+                            <label class="form-check-label" for="maleGender">Male</label>
+                          </div>
+        
+                          <div class="form-check form-check-inline mb-0">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                              value="option3" />
+                            <label class="form-check-label" for="otherGender">Other</label>
+                          </div>
+        
+                        </div>
+        
+                    
+        
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example97" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example97">Email ID</label>
+                        </div>
+    
+                        <p>What stack(s) are you most interested in mentoring?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Front End (HTML, CSS, JS)
+                          </label>
+                        </div>
+                    
+                        <!-- Checked checkbox -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
+                          <label class="form-check-label" for="flexCheckDefault2">
+                            Python
+                          </label>
+                        </div>
+                    
+                        <!-- Checked checkbox -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+                          <label class="form-check-label" for="flexCheckDefault3">
+                            JavaScript
+                          </label>
+                        </div>
+    
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                          <label class="form-check-label" for="flexCheckDefault">
+                            PHP
+                          </label>
+                        </div>
+                    
+                        <!-- Checked checkbox -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
+                          <label class="form-check-label" for="flexCheckDefault2">
+                            Ruby
+                          </label>
+                        </div>
+                    
+                        <!-- Checked checkbox -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+                          <label class="form-check-label" for="flexCheckDefault3">
+                            Java
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                          <label class="form-check-label" for="flexCheckDefault">
+                          UX Design
+                          </label>
+                        </div>
+                    
+                        <!-- Checked checkbox -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" />
+                          <label class="form-check-label" for="flexCheckDefault2">
+                            Database
+                          </label>
+                        </div>
+                    
+                        <!-- Checked checkbox -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3" />
+                          <label class="form-check-label" for="flexCheckDefault3">
+                            Others
+                          </label>
+                        </div>
+        
+                        <div class="d-flex justify-content-end pt-3">
+                          <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                          <button type="button" class="btn btn-outline-light btn-lg ms-2">Submit form</button>
+                        </div>
+                        
+        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end of   testimonies -->
+    
+        
+      <div id="floatn"  style="
+    
+      top: 50%;
+      left: 0;
+     
+    
+      position: fixed;
+      z-index: 4;
+      margin-left: 30px;
+     
+      " >
+      <a href="#">
+        <img      src="images/2ndlogoofcode.webp" alt="">
+      </a>
+        
+        
+        
+    
+      </div>
+    
+    
+        <!-- testimonial vids -->
+    
+    
+        <section  class="d-flex align-items-center">
+          <div class="container-fluid interestedSection">
+            <div class="col-12   wrap">
+              <h1>Interested  in Mentoring ?</h1>
+              <h5 class="mt-4">
+                Mentors are an integral part of our success, enabling students to have access to those who have worked in the industry and want to share their knowledge and experience. While most of our mentors 
+                come from local companies, we also welcome remote mentors!
+              </h5>
+    
+              <button><a href="#">Learn More</a></button>
+    
+            
+    
+            </div>
+          </div>
+        </section>
+        
+    
+    
+    <footer class="text-center text-lg-start text-white" style="background-color: #0c1424">
+        <div class="container p-4">
+          <div class="row mt-4">
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Brightfied Tech Academy</h5>
+              <p>
+                Brightfield Tech Academy is a
+                 technology education organization
+                  dedicated to enabling technology education and employability among the residents in various communities within the Sefwi area.  
+              </p> 
+              <div class="mt-4">
+                <a  href="https://web.facebook.com/groups/btadevcommunity/" type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                <a href="https://mobile.twitter.com/brightfieldtec"  type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+    
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                <label class="form-label" for="formControlLg">Search</label>
+              </div>
+    
+              <ul class="fa-ul" style="margin-left: 1.65em;">
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Ghana, Western North  - Sefwi Bekwai</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">btn@gmail.com</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+233 054 244 7134</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Opening hours</h5>
+    
+              <table class="table text-center text-white">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Mon - Fri:</td>
+                    <td>7am - 6:30pm</td>
+                  </tr>
+               
+                  <tr>
+                    <td>Saturday</td>
+                    <td>9am - 6pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="#">Brightfield Tech Academy</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>

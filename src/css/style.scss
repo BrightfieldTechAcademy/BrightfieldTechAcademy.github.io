@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+$primary: #00bfff;
+$secondary-blue: rgb(50, 59, 184);
+$secondary: #0c1424;
+$secondary-dark: #060c14;
+$primary-white: #ffffff;
+$body: rgb(252, 245, 245);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // border: 1px solid red;
+}
+
+body {
+  color: $primary;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: none;
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  border-bottom: 10px solid $primary;
+  top: 0px;
+  position: static;
+  width: 100vw;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 29px;
+  height: 2px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.middle-bar {
+  width: 24px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: $secondary-dark;
+  }
+
+  .nav-link:hover {
+    color: #050e94;
+  }
+}
+
+.navbar .companyLogo {
+  max-height: 4rem;
+  margin-left: 1rem;
+  max-width: 90%;
+}
+// mobile screen
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 4rem;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    text-align: center;
+    min-height: 90vh;
+    transition: 0.8s;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 10px 27px rgba(39, 21, 21, 0.05);
+    &.active {
+      left: 0;
+    }
+  }
+
+  .nav-item {
+    margin: 0.8rem;
+    .nav-link {
+      font-size: 23px;
+      font-weight: 400;
+      color: $secondary-dark;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar .companyLogo {
+    width: 69%;
+    max-height: 54px;
+  }
+
+  .videotxt {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .videotext h1 {
+    color: white !important;
+    z-index: 2;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    color: white;
+  }
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.videoWrapper {
+  padding-top: 3rem;
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  background-color: #0c1424;
+
+  // Desktop
+  @media only screen and (min-width: 768px) {
+    .videotext {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      .inner {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      h1 {
+        color: white !important;
+        z-index: 2;
+        font-weight: 900;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      .videotextButton {
+        background-color: #05aae1;
+        color: white;
+        border: none;
+        width: 70%;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 30px;
+        flex-shrink: 2;
+      }
+    }
+  }
+}
+
+.missionAndValues {
+  background-color: #505170;
+  .row .col-xm-12.col-sm-4 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: $primary-white;
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  img {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+  }
+}
+
+#FirstFlipOver {
+  height: 100%;
+  width: 90%;
+  position: relative;
+  z-index: -2;
+  padding: 10% 10% 10% 10%;
+  margin: auto;
+  background-color: rgba(233, 230, 227, 0.5) !important;
+}
+
+.FirstOverlayOfFlipOver > hr {
+  border-color: white;
+}
+
+.unknown {
+  background-image: url(../assets/bosses.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 1rem;
+  bottom: 1rem;
+  width: 90%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Section Number 4 */
+.sectionNumberFour {
+  min-height: 400px;
+}
+
+.hallMark {
+  background-color: rgb(247, 246, 245);
+  article {
+    .h2 {
+      color: #0c1424;
+      width: 80%;
+      font-weight: bold;
+      padding: 3rem 2rem 1rem 2rem;
+    }
+    .content {
+      color: #0c1424;
+      padding-left: 1rem;
+      padding: 2rem;
+      width: 90%;
+    }
+  }
+}
+
+.onFire {
+  background-color: #505170;
+  color: white;
+  article {
+    text-align: start;
+    .h2 {
+      width: 80%;
+      font-weight: bold;
+      padding: 3rem 2rem 2rem 2rem;
+    }
+    .content {
+      padding-right: 1rem;
+      padding: 2rem;
+      width: 90%;
+    }
+  }
+}
+
+.counterArea {
+  background-color: #0c1424;
+  .centerCounterArea {
+    padding-top: 10%;
+    padding-bottom: 15%;
+    text-align: center;
+    span > i {
+      padding-bottom: 5%;
+      color: white;
+    }
+    h1,
+    h3 {
+      color: white;
+    }
+  }
+  h1 {
+    margin: auto;
+  }
+}
+
+.flip {
+  margin-top: 5rem;
+}
+
+#FirstFlipOver1 {
+  min-height: 28rem;
+  width: 90%;
+  position: relative;
+  z-index: -2;
+  padding: 1% 1% 1% 1%;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgba(233, 230, 227, 0.5) !important;
+  .sliderText {
+    width: 90%;
+  }
+}
+
+.FirstOverlayOfFlipOver2 {
+  min-height: 20rem;
+  max-width: 70%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2%;
+  margin-left: 39%;
+  margin-bottom: 4%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: absolute;
+}
+
+.FirstOverlayOfFlipOver2 > h6 {
+  font-size: 98%;
+  color: rgb(0, 0, 0);
+  padding-right: 10%;
+  padding-left: 10px;
+  padding-top: 5%;
+  padding-bottom: 10px;
+}
+
+.FirstOverlayOfFlipOver2 > hr {
+  border-color: white;
+}
+
+/* start of third flip */
+#FirstFlipOver2 {
+  min-height: 28rem;
+  width: 90%;
+  position: relative;
+  z-index: -2;
+  padding: 1% 1% 1% 1%;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgba(233, 230, 227, 0.5) !important;
+}
+
+.FirstOverlayOfFlipOver3 {
+  min-height: 20rem;
+  max-width: 70%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2%;
+  margin-left: 39%;
+  margin-bottom: 4%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: absolute;
+}
+
+.FirstOverlayOfFlipOver3 > h6 {
+  font-size: 98%;
+  color: rgb(0, 0, 0);
+  padding-right: 10%;
+  padding-left: 10px;
+  padding-top: 5%;
+  padding-bottom: 10px;
+}
+
+.FirstOverlayOfFlipOver3 > hr {
+  border-color: white;
+}
+
+.FirstOverlayOfFlipOver {
+  min-height: 20rem;
+  max-width: 70%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2%;
+  margin-left: 39%;
+  margin-bottom: 4%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.FirstOverlayOfFlipOver > h6 {
+  font-size: 98%;
+  color: rgb(0, 0, 0);
+  padding-right: 10%;
+  padding-left: 10px;
+  padding-top: 5%;
+  padding-bottom: 10px;
+}
+
+#thirdImageholder {
+  background-image: url(../assets/oliverandfrind.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 1rem;
+  bottom: 1rem;
+  width: 90%;
+  position: absolute;
+  z-index: -1;
+}
+
+#FirstFlipOver3 {
+  min-height: 28rem;
+  width: 90%;
+  position: relative;
+  z-index: -2;
+  padding: 1% 1% 1% 1%;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgba(233, 230, 227, 0.5) !important;
+}
+
+#forthImageholder {
+  background-image: url(../assets/oliverandfrind.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 1rem;
+  bottom: 1rem;
+  width: 90%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* typo effects */
+.typing-effect {
+  color: white !important;
+  z-index: 2;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 0.05px;
+  left: 2%;
+  width: 85%;
+}
+
+/* end  of flipOverthreecards */
+#floatn img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 6rem;
+  opacity: 0.4;
+}
+
+/* footerstart */
+footer {
+  margin-top: 8rem;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #0c1527 !important;
+  font-family: "Poppins", sans-serif;
+}
+
+footer a {
+  color: var(--primary) !important;
+}
+
+footer a:hover {
+  color: var(--primary) !important;
+}
+
+footer p:hover {
+  color: var(--primary) !important;
+}
+
+.fa-ul {
+  margin-left: 1.65em;
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+}

@@ -23,6 +23,10 @@ module.exports = {
       template: './src/mentorship.html',
       filename: 'mentorship.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/learn.html',
+      filename: 'learn.html',
+    }),
   ],
   output: {
     filename: '[name]. bundle.js',
@@ -32,6 +36,15 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
